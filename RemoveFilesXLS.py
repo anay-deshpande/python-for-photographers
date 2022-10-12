@@ -27,7 +27,7 @@ while curr_row < num_rows:
         cell_value = worksheet.cell_value(curr_row, curr_cell)
 
                
-        imageJPG = cell_value + ".JPG"
+        imageJPG = str(cell_value) + ".png"   #change the file extension w.r.t your files
         
         sJ = source + imageJPG        
 
@@ -35,7 +35,7 @@ while curr_row < num_rows:
             #print "sJ ",sJ
             os.remove(sJ)
             i = i + 1
-            shutil.move(sJ,t)
+            #shutil.move(sJ,t)
         else:
             print ("Missing ",imageJPG)
             pass

@@ -28,14 +28,14 @@ while curr_row < num_rows:
         cell_type = worksheet.cell_type(curr_row, curr_cell)
         cell_value = worksheet.cell_value(curr_row, curr_cell)
         
-        imageName = cell_value + ".NEF"        
+        imageName = str(cell_value)+ ".png"        #change the file extension w.r.t your files
         t = destination + imageName
         if os.path.isfile(t):
             i = i + 1            
         else:
             k = k + 1
             print (imageName)
-        print (i)
+        #print (i)
 
 print ("found-",i)
 print ("not found-",k)

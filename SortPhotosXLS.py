@@ -7,7 +7,7 @@ source = "D:\\Photos\\Raw\\"    # Directory of RAW photos
 
 destination = "D:\\Photos\\Toedit\\"   # Directory where sorted RAW photos need to be copied
 
-file = "D:\\Photos\\sort.xls\\"       # Excel sheet containing names of the files
+file = "D:\\Photos\\sort.xls"       # Excel sheet containing names of the files
 
 workbook = xlrd.open_workbook(file)
 worksheet = workbook.sheet_by_name('Sheet1')  # Sheet name
@@ -32,11 +32,12 @@ while curr_row < num_rows:
 
         #print "Img ",cell_value
         
-        imageSony = cell_value + ".ARW"
-        imageNikon = cell_value + ".NEF"
-        imageCanon = cell_value + ".CR3"
-        imageJPG = cell_value + ".JPG"
-        imageJPGBW = cell_value + "-2.JPG"
+        imageSony = str(cell_value) + ".ARW"      #change the file extensions w.r.t your files
+        imageNikon = str(cell_value) + ".NEF"
+        imageCanon = str(cell_value) + ".CR3"
+        imageJPG = str(cell_value) + ".JPG"
+        imageJPGBW = str(cell_value) + "-2.JPG"
+        imagePNG = str(cell_value) + ".PNG"
         
         #imageNikon = cell_value + ".JPG"
         #imageCanon = cell_value + ".JPG"
@@ -46,6 +47,7 @@ while curr_row < num_rows:
         sC = source + imageCanon
         sJ = source + imageJPG
         sJBW = source + imageJPGBW
+        sP = source + imagePNG
         
         if os.path.isfile(sS):
             t = destination + imageSony
@@ -83,8 +85,17 @@ while curr_row < num_rows:
             else:
                 shutil.copyfile(sJ,t)
             #shutil.move(sJ,t)        
+        elif os.path.isfile(sP):
+            t = destination + imagePNG
+            i = i + 1
+            #print "sJ ",sJ
+            if os.path.isfile(t):
+                pass
+            else:
+                shutil.copyfile(sP,t)
+            #shutil.move(sJ,t)        
         else:
-            print ("Missing -> ",cell_value)
+            print ("Missing -> ",str(cell_value))
             k = k + 1
 
         if os.path.isfile(sJBW):
@@ -97,7 +108,7 @@ while curr_row < num_rows:
                 shutil.copyfile(sJBW,t)
             #shutil.move(sJBW,t)
             
-        print (i)
+        #print (i)
             
                 
 print ('total-',j)                
