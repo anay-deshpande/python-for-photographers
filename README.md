@@ -1,15 +1,28 @@
 # Python-for-Photographers
-This is a repository for python scripts which can be used to sort photos, lists directory contents, delete files and can take reference from a XLS file and delete and sort photos.
+This is a repository for python scripts which can be used to sort photos, list folder contents, delete files, compare files and also can take reference from a XLS file to perform the functions. It majorly helps photographers to automate their daily tasks & save resources.
 
 ## Scripts
 - CompareFiles.py
   - 
+
 - CompareFilesXLS.py
   - 
+
 - DirectoryList.py
   - 
+
 - RemoveFilesXLS.py
   - 
+
+- RenameFiles.py
+  - 
+
+- SortPhotos.py
+  - 
+
+- SortPhotosXLS.py
+  - 
+
 
 
 ## Dependencies
