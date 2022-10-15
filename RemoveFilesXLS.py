@@ -1,3 +1,6 @@
+# Removes files from a directory with reference to the filenames in the XLS file.
+
+
 import os,sys,xlrd,string,glob,shutil
 imageName = ""
 

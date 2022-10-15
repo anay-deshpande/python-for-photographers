@@ -1,4 +1,4 @@
-# Copies RAW photos from the list of images in a excel sheet in specified directory
+# Copies files from the list of filenames from a XLS file to the specified folder.
 
 import os,sys,xlrd,string,glob,shutil
 imageName = ""

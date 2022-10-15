@@ -1,4 +1,5 @@
-# Compares files/ photos from 2 folders and prints the list of the missing files/ photos
+# Compares files/ photos from 2 folders and prints the list of the missing files/ photos.
+
 
 import os,sys,string,glob,shutil
 

@@ -1,4 +1,4 @@
-# Compares filenames from an excel sheet and prints the list of the missing files/ photos
+# Compares filenames from a XLS file and prints the list of the missing files/ photos.
 
 
 import os,sys,xlrd,string,glob,shutil

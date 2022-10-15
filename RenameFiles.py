@@ -1,4 +1,5 @@
-# Rename files/ photos in a specific folder
+# Renames files/ photos in a specific folder.
+
 
 import os,sys,string,glob,shutil
 

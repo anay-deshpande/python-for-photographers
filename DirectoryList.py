@@ -1,4 +1,5 @@
-# Writes list of files/folders in a directory in a .txt file
+# Writes list of files/ folders in a directory in a .txt file
+
 
 import os,sys,string,glob,shutil
 

@@ -1,4 +1,4 @@
-# Copies RAW photos of the sorted JPEG photos to another folder
+# Copies RAW copies of the sorted JPEG photos to the specified folder.
 
 
 import os,sys,string,glob,shutil
