@@ -33,6 +33,7 @@ This is a repository for python scripts which can be used to sort photos, list f
 
 - Download/Clone this Repo into desired folder.
 - Install the requirements.
-- Change the file location for the photographs in the script. 
+- Change the file location for the photographs in the script.
+- Change file extension (if needed, mentioned in the script details) 
 - Open up your terminal/ IDE/ Compiler. 
 - Run the script.
